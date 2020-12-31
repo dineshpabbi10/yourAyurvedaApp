@@ -6,7 +6,7 @@ export default function About() {
   return (
     <View style={styles.container}>
       <Text>About us</Text>
-      <StatusBar style="auto" />
+      <StatusBar hidden={true} />
     </View>
   );
 }

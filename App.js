@@ -1,15 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Treatments from './Components/Treatments';
 import About from './Components/About';
+import UniverseConnection from './Components/UniverseConnection';
 import { withSafeAreaInsets } from 'react-native-safe-area-context';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+
+  var ads = async ()=>{
+    try{
+      await AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712'); // Test ID, Replace with your-admob-unit-id
+      await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: false});
+      await AdMobInterstitial.showAdAsync();
+    }catch{
+      console.log("error");
+    }
+    
+  };
   return (
     <NavigationContainer>
         <Tab.Navigator 
@@ -26,9 +38,10 @@ export default function App() {
           }
         >
             <Tab.Screen name="Treatments" component={Treatments} />
-            <Tab.Screen name="Introduction" component={Treatments} />
+            <Tab.Screen name="Connection" component={UniverseConnection} />
             <Tab.Screen name="About" component={About} />
         </Tab.Navigator>
+        <StatusBar hidden={true} />
     </NavigationContainer>
    
   );

@@ -6,7 +6,7 @@ export default function Treatments() {
   return (
     <View style={styles.container}>
       <Text>Treatments</Text>
-      <StatusBar style="auto" />
+      <StatusBar hidden={true} />
     </View>
   );
 }
