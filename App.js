@@ -20,15 +20,13 @@ export default function App() {
               activeTintColor:'green',
               inactiveTintColor:'white',
               tabStyle:{
-                alignItems:'center',
-                justifyContent:'center',
-                width:100
+                justifyContent:'center'
               }
             }
           }
         >
             <Tab.Screen name="Treatments" component={Treatments} />
-            <Tab.Screen name="Treat" component={Treatments} />
+            <Tab.Screen name="Introduction" component={Treatments} />
             <Tab.Screen name="About" component={About} />
         </Tab.Navigator>
     </NavigationContainer>
@@ -44,10 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bottomTab:{
-    backgroundColor:'green',
-    display:'flex',
-    alignItems:'center',
-    justifyContent:'center'
+    backgroundColor:'green'
   },
   labelStyle:{
     color:'white'
