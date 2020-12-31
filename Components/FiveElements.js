@@ -15,10 +15,10 @@ function BoldText(props){
 }
 
 
-export default function UniverseConnection(){
+export default function FiveElements(){
 
     return (
-      <Article heading={"The Human-Cosmic Connection"} imgUrl={require('../assets/Connection.jpg')}>
+      <Article heading={"The Five Elements of Nature"} imgUrl={require('../assets/fiveElements.jpg')}>
         Humans are a creation of cosmic conciousness and can be categorized into two main energy forms : {"\n\n"}
               {'\u2022'} <BoldText>Purusha : </BoldText>This form of energy is related to existence. It does not create but witnesses the creations and happenings.  {'\n\n'}
               {'\u2022'} <BoldText>Prakruti : </BoldText>This energy has a form and has divine creative attributes. Creation of the universe happens when Purusha and Prakruti become one. Hence Prakruti is the Divine Mother. {'\n\n'}

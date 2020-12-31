@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Treatments from './Components/Treatments';
 import About from './Components/About';
 import UniverseConnection from './Components/UniverseConnection';
-import { withSafeAreaInsets } from 'react-native-safe-area-context';
+import FiveElements from './Components/FiveElements';
 
 const Tab = createBottomTabNavigator();
 
@@ -39,6 +39,7 @@ export default function App() {
         >
             <Tab.Screen name="Treatments" component={Treatments} />
             <Tab.Screen name="Connection" component={UniverseConnection} />
+            <Tab.Screen name="Elements" component={FiveElements} />
             <Tab.Screen name="About" component={About} />
         </Tab.Navigator>
         <StatusBar hidden={true} />
