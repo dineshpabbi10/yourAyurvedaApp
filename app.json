@@ -26,6 +26,7 @@
       }
     },
     "web": {
+      "include": ["@codler/react-native-keyboard-aware-scroll-view"],
       "favicon": "./assets/favicon.png"
     }
   }
