@@ -1,8 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {
+    AdMobInterstitial,
+  } from 'expo-ads-admob';
 
 export default function Treatments() {
+    var ads = async ()=>{
+        try{
+          await AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712'); // Test ID, Replace with your-admob-unit-id
+          await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: false});
+          await AdMobInterstitial.showAdAsync();
+        }catch{
+          console.log("error");
+        }
+        
+      }
+
+      useEffect(()=>{
+        ads();
+      },[]);
   return (
     <View style={styles.container}>
       <Text>Treatments</Text>

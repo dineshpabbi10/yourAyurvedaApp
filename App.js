@@ -32,7 +32,7 @@ export default function App() {
               activeTintColor:'green',
               inactiveTintColor:'white',
               tabStyle:{
-                justifyContent:'center'
+                justifyContent:'center',
               }
             }
           }
