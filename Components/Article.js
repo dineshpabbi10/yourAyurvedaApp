@@ -42,9 +42,10 @@ export default function Article(props){
           </ScrollView>
           <AdMobBanner
             bannerSize="banner"
-            adUnitID="ca-app-pub-4805534927096696/4723035410"
+            adUnitID="ca-app-pub-3940256099942544/6300978111"
             servePersonalizedAds // true or false
             onDidFailToReceiveAdWithError={errorHandler} />
+          {/* "ca-app-pub-4805534927096696/4723035410" */}
           
         </View>
       );
