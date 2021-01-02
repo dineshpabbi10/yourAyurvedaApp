@@ -21,7 +21,7 @@ export default function About() {
       },[]);
   return (
     <View style={styles.container}>
-      <Text>About us</Text>
+      <Text>The sole purpose of this app is to provide information about the tradition of health care and ayurveda. This information is not intended for use in the diagnosis, treatment, cure or prevention of any disease. If you have any serious acute or chronic health concern, please consult a trained health professional who can fully assess your needs and address them effectively. Check with your doctor before taking herbs or using essential oils when pregnant or nursing.</Text>
       <StatusBar hidden={true} />
     </View>
   );
