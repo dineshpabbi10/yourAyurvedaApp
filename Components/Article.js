@@ -38,7 +38,7 @@ export default function Article(props){
 
   const sc = a.interpolate({
     inputRange:[0,140],
-    outputRange:[1,0.5],
+    outputRange:[1,0.7],
     extrapolate:'clamp'
   })
 

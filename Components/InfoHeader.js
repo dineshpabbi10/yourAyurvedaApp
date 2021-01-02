@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
       width:'100%',
       color:'white',
       position:'absolute',
-      top:60,
+      bottom:0,
       zIndex:10,
       opacity:0.9,
       textShadowColor:'black',
