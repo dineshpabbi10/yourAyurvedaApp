@@ -3,7 +3,6 @@
 import {Text,StyleSheet,View,ScrollView,ImageBackground,Animated} from 'react-native';
 import React, { useEffect,useState } from 'react';
 import InfoHeader from './InfoHeader';
-import BoldText from './BoldText';
 import {
     AdMobBanner,
   AdMobInterstitial,

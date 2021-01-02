@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
       opacity:0.9,
       textShadowColor:'black',
       textShadowOffset:{height:5,width:5},
-      textShadowRadius:30,
+      textShadowRadius:14,
       fontFamily:'sans-serif-condensed',
       padding:12,
       fontSize:25,
