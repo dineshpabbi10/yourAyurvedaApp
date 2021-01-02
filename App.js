@@ -7,7 +7,7 @@ import Treatments from './Components/Treatments';
 import About from './Components/About';
 import UniverseConnection from './Components/UniverseConnection';
 import FiveElements from './Components/FiveElements';
-
+import Dosha from './Components/Dosha'
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -40,6 +40,7 @@ export default function App() {
             <Tab.Screen name="Treatments" component={Treatments} />
             <Tab.Screen name="Connection" component={UniverseConnection} />
             <Tab.Screen name="Elements" component={FiveElements} />
+            <Tab.Screen name="Dosha" component={Dosha} />
             <Tab.Screen name="About" component={About} />
         </Tab.Navigator>
         <StatusBar hidden={true} />

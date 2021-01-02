@@ -1,18 +1,6 @@
-import {Text,StyleSheet,View,ScrollView,Image} from 'react-native';
-import React, { useEffect } from 'react';
-import InfoHeader from './InfoHeader';
-import {
-  AdMobInterstitial,
-} from 'expo-ads-admob';
-import { useLinkProps } from '@react-navigation/native';
+import React from 'react';
 import Article from './Article';
-
-
-function BoldText(props){
-  return(
-    <Text style={{fontWeight:'bold'}}>{props.children}</Text>
-  );
-}
+import BoldText from './BoldText';
 
 
 export default function FiveElements(){

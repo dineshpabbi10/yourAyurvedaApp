@@ -1,18 +1,6 @@
-import {Text,StyleSheet,View,ScrollView,Image} from 'react-native';
-import React, { useEffect } from 'react';
-import InfoHeader from './InfoHeader';
-import {
-  AdMobInterstitial,
-} from 'expo-ads-admob';
-import { useLinkProps } from '@react-navigation/native';
+import React from 'react';
 import Article from './Article';
-
-
-function BoldText(props){
-  return(
-    <Text style={{fontWeight:'bold'}}>{props.children}</Text>
-  );
-}
+import BoldText from './BoldText';
 
 
 export default function UniverseConnection(){
@@ -23,7 +11,7 @@ export default function UniverseConnection(){
               {'\u2022'} <BoldText>Purusha : </BoldText>This form of energy is related to existence. It does not create but witnesses the creations and happenings.  {'\n\n'}
               {'\u2022'} <BoldText>Prakruti : </BoldText>This energy has a form and has divine creative attributes. Creation of the universe happens when Purusha and Prakruti become one. Hence Prakruti is the Divine Mother. {'\n\n'}
               <BoldText>The Nature</BoldText> {'\n'}
-              The manifestation of nature leads to developement of two expressions- Buddhi (Intelligence ) and Ahamkar (Ego). Ego is the sense of self-identity which helps us in acting and reacting. {'\n\n'}
+              The manifestationof nature leads to developement of two expressions- Buddhi (Intelligence ) and Ahamkar (Ego). Ego is the sense of self-identity which helps us in acting and reacting. {'\n\n'}
               Ego expresses itself in three qualities : {'\n\n'}
               {'\u2022'} <BoldText>Sattva : </BoldText>Sattva refers to purity and clarity. The mind, the motor organs and the sensing organs are born due to Sattva. {'\n\n'}
               {'\u2022'} <BoldText>Rajas : </BoldText>Rajas relates to dynamic movements. Feeling and emotions are a result of Rajas gun. It is the force behind movement of organs. {'\n\n'}
