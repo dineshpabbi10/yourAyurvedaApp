@@ -68,7 +68,6 @@ export default function Article(props){
           style={styles.infoContainer}>
             <Text style={styles.bigFont}>
               {props.children}
-              
             </Text>      
           </Animated.ScrollView>
           <AdMobBanner
@@ -88,20 +87,15 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
     infoContainer:{
-      width:"95%",
-      paddingTop:200
+      width:"95%"
     },
     bigFont:{
-        
-      height:'100%',
       fontFamily:'sans-serif-condensed',
       fontSize:20,
-      textAlign:'justify',
-      overflow:'scroll',
       backgroundColor:'white',
       borderRadius:5,
       padding:10,
-      marginTop:5,
-      marginBottom:5,
+      marginBottom:10,
+      marginTop:210
     }
   });
