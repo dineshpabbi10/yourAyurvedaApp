@@ -37,7 +37,7 @@ export default function Article(props){
 
   const sc = a.interpolate({
     inputRange:[0,140],
-    outputRange:[1,0.7],
+    outputRange:[1,0.6],
     extrapolate:'clamp'
   })
 
@@ -50,7 +50,7 @@ export default function Article(props){
           <Animated.View style={{position:'absolute',zIndex:999,height:200,transform:[
                 {translateY:h}
             ],width:'100%',backgroundColor:'black'}}> 
-                <AnimatedImageBackground resizeMode="cover" blurRadius={sc} style={{opacity:sc,display:'flex',alignItems:'flex-end',justifyContent:'flex-end',height:200,shadowColor:'black',shadowRadius:70,shadowOffset:{height:70,width:0}}} source={props.imgUrl}>
+                <AnimatedImageBackground resizeMode="cover" style={{opacity:sc,display:'flex',alignItems:'flex-end',justifyContent:'flex-end',height:200,shadowColor:'black',shadowRadius:70,shadowOffset:{height:70,width:0}}} source={props.imgUrl}>
                     <InfoHeader text={props.heading}/>
                 </AnimatedImageBackground>
           </Animated.View>
