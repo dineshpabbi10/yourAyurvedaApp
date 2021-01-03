@@ -6,7 +6,7 @@ import BoldText from './BoldText';
 export default function UniverseConnection(){
 
     return (
-      <Article heading={"The three Doshas in Ayurveda"} imgUrl={require('../assets/Dosha.jpg')}>
+      <Article heading={""} imgUrl={require('../assets/Dosha.jpg')}>
         Ayurveda states that the world is made up of five elements. Space (Ether), Air, Fire, Water and Earth constitue these elements. 
         These elements combine to form three doshas namely :{'\n\n'}
 

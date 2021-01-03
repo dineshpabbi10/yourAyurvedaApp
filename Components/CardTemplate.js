@@ -9,19 +9,17 @@ import {
 } from 'expo-ads-admob';
 
 
-export default function Article(props){
-  
+export default function CardTemplate(props){
   var ads = async ()=>{
-      try{
-        await AdMobInterstitial.setAdUnitID('ca-app-pub-4805534927096696/5685296127'); // Test ID, Replace with your-admob-unit-id
-        await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: false});
-        await AdMobInterstitial.showAdAsync();
-        await AdMobInterstitial.dismissAdAsync()
-      }catch{
-        console.log("error");
-      }
+    try{
+      await AdMobInterstitial.setAdUnitID('ca-app-pub-4805534927096696/5685296127'); // Test ID, Replace with your-admob-unit-id
+      await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: false});
+      await AdMobInterstitial.showAdAsync();
+    }catch{
+      console.log("error");
+    }
+    
   }
-  
   useEffect(()=>{
     ads();
   },[]);
@@ -59,18 +57,17 @@ export default function Article(props){
 
           {/* ScrollView */}
           <Animated.ScrollView 
+                onScroll={Animated.event([
+                    { nativeEvent: { contentOffset: { y: a}}}
+                ],
+                {useNativeDriver:true}
+                )
+                }
+                
+                style={styles.infoContainer}
+          >
 
-          onScroll={Animated.event([
-            { nativeEvent: { contentOffset: { y: a}}}
-           ],
-           {useNativeDriver:true}
-           )
-          }
-          
-          style={styles.infoContainer}>
-            <Text style={styles.bigFont}>
-              {props.children}
-            </Text>      
+            {props.children}    
           </Animated.ScrollView>
           <AdMobBanner
             bannerSize="banner"

@@ -6,7 +6,7 @@ import BoldText from './BoldText';
 export default function FiveElements(){
 
     return (
-      <Article heading={"The Five Elements of Nature"} imgUrl={require('../assets/fiveElements.jpg')}>
+      <Article heading={""} imgUrl={require('../assets/fiveElements.jpg')}>
           Ayurveda says that there are five fundamental elements in nature which are present in both organic and inorganic matter. 
           The human body functioning and psychology is directly related to the five elements. 
           These five elements are as follow :{'\n\n'}
